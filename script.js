@@ -37,13 +37,13 @@ function GradeError() {
 
 function validateGrade(grade) {
     if (typeof grade !== "number" || isNaN(grade)) {
-        throw new Error("Bad input: grade must be a number value.");
+        throw new GradeError();
     }
     if (grade < 0) {
-        throw new Error("Bad input:grade cannot be less than 0")
+        throw new GradeError()
     }
     if (grade > 100) {
-        throw new GradeError("Bad input:grade cannot be greater than 100")
+        throw new GradeError()
     }
 
     console.log("Valid Grade:", grade);
@@ -52,7 +52,9 @@ validateGrade(50);
 //validateGrade(C);
 //validateGrade(749);
 try {
-    validateGrade(749);
+    //validateGrade(749);
+    validateGrade(-30);
+    //validateGrade(H);
 } catch (error) {
     if (error.name === "GradeError") {
         console.log("Error Detected");
