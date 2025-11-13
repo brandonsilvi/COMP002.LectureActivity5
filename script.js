@@ -1,9 +1,10 @@
 myGrades = [100, 100, 90, 73, 78, 94, 86];
 
 myAverage = 0;
-
-for (let i = 1; i <= myGrades.length; i++) {
-
+//variables should be declared by using let 
+for (let i = 0; i < myGrades.length; i++) {
+//i should start at 0 which is the first item in the array.
+//my grades <= returns NaN, fix by using < instead
 myAverage += myGrades[i];
 
 }
