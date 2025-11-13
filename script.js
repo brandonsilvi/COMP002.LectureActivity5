@@ -12,7 +12,7 @@ myAverage += myGrades[i];
 myAverage = myAverage / myGrades.length;
 
 console.log("My grade average is " + myAverage);
-////////////////////////////////////////////////// 
+console.log("//////////////////////////////////////////////////")
 console.log("Question2")
 function validateGrade(grade) {
     if (typeof grade !== "number" || isNaN(grade)) {
@@ -28,5 +28,9 @@ function validateGrade(grade) {
     console.log("Valid Grade:", grade);
 }
 validateGrade(50);
-validateGrade(C);
-validateGrade(749);
+//validateGrade(C);
+//validateGrade(749);
+console.log("//////////////////////////////////////////////////")
+function GradeError() {
+    this.name ="GradeError"
+}
